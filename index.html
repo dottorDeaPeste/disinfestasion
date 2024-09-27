@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Disinfestasion Venezia - La tua soluzione contro gli infestanti</title>
+    <!-- Meta tag per il responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tag SEO -->
+    <meta name="description" content="Disinfestasion Venezia offre servizi professionali di disinfestazione e derattizzazione a Venezia e provincia. Proteggiamo la tua casa e azienda da insetti e roditori.">
+    <meta name="keywords" content="Disinfestasion Venezia, derattizzazione Venezia, disinfestazione insetti, allontanamento volatili, sanificazione ambientale, consulenza HACCP">
+    <!-- Foglio di stile interno -->
+    <style>
+        /* Reset di base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Stili generali */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2C3E50;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        /* Header */
+        header {
+            background-color: #1ABC9C;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Logo */
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .logo img {
+            width: 80px;
+            height: auto;
+        }
+
+        /* Navigazione */
+        nav {
+            background-color: #34495E;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .menu-icon {
+            display: none;
+            font-size: 2em;
+            color: white;
+            cursor: pointer;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+        }
+
+        .menu li {
+            margin-left: 20px;
+        }
+
+        .menu li a {
+            display: block;
+            color: white;
+            padding: 20px 0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .menu li a:hover {
+            color: #1ABC9C;
+        }
+
+        #menu-toggle {
+            display: none;
+        }
+
+        /* Pulsanti */
+        .btn {
+            display: inline-block;
+            background-color: #2980B9;
+            color: white;
+            padding: 12px 24px;
+            margin-top: 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .btn:hover {
+            background-color: #1ABC9C;
+        }
+
+        /* Sezioni */
+        .section {
+            padding: 60px 0;
+        }
+
+        .section h2 {
+            color: #1ABC9C;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        .section p {
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        /* Stili per la sezione Servizi */
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .service {
+            background-color: #f4f4f4;
+            padding: 20px;
+            width: 30%;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .service:hover {
+            transform: scale(1.05);
+        }
+
+        .service img {
+            width: 80px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .service h3 {
+            color: #2980B9;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        .service p {
+            line-height: 1.6;
+            font-size: 1em;
+        }
+
+        /* Sezione Testimonianze */
+        .testimonials {
+            background-color: #ecf0f1;
+            padding: 60px 0;
+        }
+
+        .testimonial {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+            font-style: italic;
+            color: #7f8c8d;
+        }
+
+        .testimonial h3 {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #2C3E50;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #34495E;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .menu-icon {
+                display: block;
+            }
+
+            .menu {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #34495E;
+            }
+
+            .menu li {
+                margin: 0;
+            }
+
+            .menu li a {
+                padding: 10px 0;
+                border-top: 1px solid #2C3E50;
+            }
+
+            #menu-toggle:checked + .menu {
+                display: flex;
+            }
+
+            .services-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service {
+                width: 100%;
+            }
+
+            .logo {
+                position: static;
+                margin-bottom: 20px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+        }
+
+        /* Stile per le mosche */
+        .bug {
+            position: absolute;
+            z-index: 9999;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="https://pbs.twimg.com/profile_images/1026434149383655425/9vWQ1guH_400x400.jpg" alt="Logo Disinfestasion Venezia">
+    </div>
+    <h1>Disinfestasion Venezia</h1>
+    <p>La tua soluzione professionale contro gli infestanti a Venezia centro storico</p>
+</header>
+
+<nav>
+    <div class="container">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <input type="checkbox" id="menu-toggle" />
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#servizi">Servizi</a></li>
+            <li><a href="#chi-siamo">Chi Siamo</a></li>
+            <li><a href="#testimonianze">Testimonianze</a></li>
+            <li><a href="#perche-noi">Perché Sceglierci</a></li>
+            <li><a href="#contatti">Contatti</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main id="content">
+    <!-- Sezione Home -->
+    <section id="home" class="section">
+        <div class="container">
+            <p>Benvenuti nel sito di</p>
+            <h2>Disinfestasion Venezia</h2>
+            <p>Leader nel settore della disinfestazione e derattizzazione centro storico di Venezia. Siamo dedicati a proteggere le vostre case e aziende da infestazioni di insetti e roditori, garantendo ambienti sani e sicuri.</p>
+            <a href="#contatti" class="btn">Contattaci Ora</a>
+        </div>
+    </section>
+
+    <!-- Sezione Servizi -->
+    <section id="servizi" class="section">
+        <div class="container">
+            <h2>Servizi Offerti</h2>
+            <div class="services-container">
+                <div class="service">
+                    <img src="https://pbs.twimg.com/profile_images/1026434149383655425/9vWQ1guH_400x400.jpg" alt="Disinfestazione Insetti">
+                    <h3>Disinfestazione Insetti</h3>
+                    <p>Offriamo trattamenti efficaci contro una vasta gamma di insetti, tra cui zanzare, blatte, cimici dei letti, formiche, vespe, termiti e molti altri. Utilizziamo prodotti sicuri ed ecocompatibili per eliminare gli infestanti senza danneggiare l'ambiente.</p>
+                </div>
+                <div class="service">
+                    <img src="https://pbs.twimg.com/profile_images/1026434149383655425/9vWQ1guH_400x400.jpg" alt="Derattizzazione">
+                    <h3>Derattizzazione</h3>
+                    <p>I topi e i ratti possono causare gravi danni strutturali e rappresentare un rischio per la salute. I nostri sistemi di monitoraggio e controllo assicurano l'eliminazione di questi roditori in modo sicuro ed efficace.</p>
+                </div>
+                <div class="service">
+                    <img src="https://pbs.twimg.com/profile_images/1026434149383655425/9vWQ1guH_400x400.jpg" alt="Allontanamento Volatili">
+                    <h3>Allontanamento Volatili</h3>
+                    <p>I volatili come i piccioni possono creare disagi e problemi igienici. Installiamo sistemi professionali per l'allontanamento di uccelli molesti, proteggendo edifici e monumenti senza nuocere agli animali.</p>
+                </div>
+                <div class="service">
+                    <img src="https://pbs.twimg.com/profile_images/1026434149383655425/9vWQ1guH_400x400.jpg" alt="Sanificazione Ambientale">
+                    <h3>Sanificazione Ambientale</h3>
+                    <p>La sanificazione è fondamentale per garantire ambienti puliti e salubri. Offriamo servizi di disinfezione per uffici, aziende, scuole e spazi pubblici, utilizzando prodotti certificati e rispettando le normative vigenti.</p>
+                </div>
+                <div class="service">
+                    <img src="https://pbs.twimg.com/profile_images/1026434149383655425/9vWQ1guH_400x400.jpg" alt="Consulenza HACCP">
+                    <h3>Consulenza HACCP</h3>
+                    <p>Per le attività del settore alimentare, forniamo servizi di monitoraggio e consulenza secondo le normative HACCP, assicurando il rispetto degli standard igienico-sanitari e aiutando le aziende a prevenire contaminazioni.</p>
+                </div>
+                <div class="service">
+                    <img src="https://pbs.twimg.com/profile_images/1026434149383655425/9vWQ1guH_400x400.jpg" alt="Trattamenti Specializzati">
+                    <h3>Trattamenti Specializzati</h3>
+                    <p>Eseguiamo trattamenti specifici come debiotizzazione, trattamenti antitarlo e difesa delle piante. Proteggiamo il tuo patrimonio verde da parassiti e malattie, preservando la salute di alberi e giardini.</p>
+                </div>
+            </div>
+            <a href="#contatti" class="btn">Contattaci per richiedere un Preventivo</a>
+        </div>
+    </section>
+
+    <!-- Sezione Chi Siamo -->
+    <section id="chi-siamo" class="section">
+        <div class="container">
+            <h2>Chi Siamo</h2>
+            <p>Siamo una squadra di professionisti con esperienza nel settore della disinfestazione. La nostra missione è fornire soluzioni personalizzate e durature, garantendo la massima soddisfazione dei nostri clienti.</p>
+        </div>
+    </section>
+
+    <!-- Sezione Testimonianze -->
+    <section id="testimonianze" class="section testimonials">
+        <div class="container">
+            <h2>Testimonianze</h2>
+            <div class="testimonial">
+                <p>"Grazie a Disinfestasion Venezia, la nostra casa è finalmente libera dalle formiche! Servizio professionale e personale cortese."</p>
+                <h3>- Maria Rossi</h3>
+            </div>
+            <div class="testimonial">
+                <p>"Intervento rapido ed efficace. Hanno risolto il problema dei topi nel nostro magazzino. Consigliatissimi!"</p>
+                <h3>- Luca Bianchi</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezione Perché Sceglierci -->
+    <section id="perche-noi" class="section">
+        <div class="container">
+            <h2>Perché Sceglierci</h2>
+            <ul>
+                <li><strong>Professionalità:</strong> Personale qualificato e certificato, pronto a rispondere a ogni esigenza.</li>
+                <li><strong>Esperienza:</strong> Anni di attività sul campo ci hanno permesso di affrontare con successo ogni tipo di infestazione.</li>
+                <li><strong>Rapidità d'Intervento:</strong> Interveniamo tempestivamente per risolvere i problemi nel minor tempo possibile.</li>
+                <li><strong>Sicurezza:</strong> Rispettiamo rigorosamente le normative sulla sicurezza e l'igiene ambientale.</li>
+                <li><strong>Soddisfazione Garantita:</strong> Puntiamo alla piena soddisfazione del cliente, offrendo soluzioni efficaci e durature.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sezione Contatti -->
+    <section id="contatti" class="section">
+        <div class="container">
+            <h2>Contatti</h2>
+            <p>Per qualsiasi informazione o per richiedere un preventivo, non esitare a contattarci:</p>
+            <ul>
+                <li><strong>Telefono:</strong> 333</li>
+                <li><strong>Email:</strong> <a href="mailto:info@">info@</a></li>
+                <li><strong>Indirizzo:</strong> Via Vecio Mio 1, Venezia</li>
+            </ul>
+            <p>Siamo a tua completa disposizione!</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Disinfestasion Venezia. Tutti i diritti riservati.</p>
+    </div>
+</footer>
+
+<!-- Script JavaScript -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://raw.githack.com/Auz/Bug/master/bug-min.js"></script>
+<script>
+    // Navigazione fluida tra le sezioni
+    $('nav a').on('click', function(event) {
+        event.preventDefault();
+        $('#menu-toggle').prop('checked', false); // Chiude il menu su dispositivi mobili
+        var target = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(target).offset().top - $('nav').outerHeight()
+        }, 800);
+    });
+
+    // Inizializzazione della libreria Bug.js
+    new BugController({
+        'minBugs': 5,
+        'maxBugs': 10,
+        'canFly': true,
+        'mouseOver': 'fly',
+        'minSpeed': 1,
+        'maxSpeed': 3,
+        'imageSprite': 'https://raw.githack.com/Auz/Bug/master/fly-sprite.png'
+    });
+</script>
+
+</body>
+</html>
