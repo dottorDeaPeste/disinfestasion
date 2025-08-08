@@ -1,0 +1,23 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450' role='img' aria-label='Mappa stilizzata di Venezia'>
+  <defs>
+    <linearGradient id='lg' x1='0' y1='0' x2='0' y2='1'>
+      <stop offset='0%' stop-color='#0fb69a'/>
+      <stop offset='100%' stop-color='#1b6db1'/>
+    </linearGradient>
+    <style>
+      .water{fill:url(#lg)}
+      .island{fill:#f5f7f9;stroke:#123;stroke-opacity:.2;stroke-width:2}
+      .label{font:600 12px system-ui, -apple-system, Segoe UI, Roboto, Arial}
+      .pin{fill:#e11d48;stroke:#fff;stroke-width:2}
+    </style>
+  </defs>
+  <rect width='800' height='450' class='water'/>
+  <path class='island' d='M120,190 q80,-40 160,0 t160,0 q-20,40 -60,60 t-120,10 q-100,10 -140,-70z'/>
+  <path class='island' d='M520,220 q60,-20 120,10 t-10,60 q-80,30 -130,-10 q-20,-30 20,-60z'/>
+  <path class='island' d='M90,300 q50,-10 90,10 t-20,50 q-70,20 -100,-10 q-10,-20 30,-50z'/>
+  <circle cx='370' cy='230' r='7' class='pin'/>
+  <text x='380' y='228' class='label'>San Marco</text>
+  <text x='200' y='210' class='label'>Cannaregio</text>
+  <text x='290' y='260' class='label'>Dorsoduro</text>
+  <text x='580' y='240' class='label'>Lido</text>
+</svg>
