@@ -1,13 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://www.disinfestazionevenezia.it/</loc><lastmod>2025-08-08</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
-<url><loc>https://www.disinfestazionevenezia.it/derattizzazione.html</loc><lastmod>2025-08-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://www.disinfestazionevenezia.it/cimici-dei-letti.html</loc><lastmod>2025-08-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://www.disinfestazionevenezia.it/blatte-zanzare.html</loc><lastmod>2025-08-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://www.disinfestazionevenezia.it/allontanamento-volatili.html</loc><lastmod>2025-08-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://www.disinfestazionevenezia.it/sanificazione.html</loc><lastmod>2025-08-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://www.disinfestazionevenezia.it/haccp.html</loc><lastmod>2025-08-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://www.disinfestazionevenezia.it/chi-siamo.html</loc><lastmod>2025-08-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://www.disinfestazionevenezia.it/privacy.html</loc><lastmod>2025-08-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://www.disinfestazionevenezia.it/cookie.html</loc><lastmod>2025-08-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.disinfestazionevenezia.it/</loc>
+    <lastmod>2025-08-08</lastmod>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- Sezioni principali -->
+  <url>
+    <loc>https://www.disinfestazionevenezia.it/servizi</loc>
+    <lastmod>2025-08-08</lastmod>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.disinfestazionevenezia.it/zone</loc>
+    <lastmod>2025-08-08</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.disinfestazionevenezia.it/perche-noi</loc>
+    <lastmod>2025-08-08</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.disinfestazionevenezia.it/faq</loc>
+    <lastmod>2025-08-08</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://www.disinfestazionevenezia.it/contatti</loc>
+    <lastmod>2025-08-08</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Servizi specifici -->
+  <url>
+    <loc>https://www.disinfestazionevenezia.it/servizi/derattizzazione</loc>
+    <lastmod>2025-08-08</lastmod>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.disinfestazionevenezia.it/servizi/cimici-dei-letti</loc>
+    <lastmod>2025-08-08</lastmod>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.disinfestazionevenezia.it/servizi/blatte-zanzare</loc>
+    <lastmod>2025-08-08</lastmod>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.disinfestazionevenezia.it/servizi/allontanamento-volatili</loc>
+    <lastmod>2025-08-08</lastmod>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.disinfestazionevenezia.it/servizi/sanificazione-ambientale</loc>
+    <lastmod>2025-08-08</lastmod>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://www.disinfestazionevenezia.it/servizi/consulenza-haccp</loc>
+    <lastmod>2025-08-08</lastmod>
+    <priority>0.75</priority>
+  </url>
 </urlset>
